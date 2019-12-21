@@ -1,5 +1,5 @@
 # MTG-Wallpaper-OTW
-THIS PROGRAM IS WINDOWS ONLY!
+THIS PROGRAM IS WINDOWS ONLY! <br />
 MTG Wallpaper OTW grabs new weekly Magic: The Gathering wallpaper from the official Magic: The Gathering website (Magic: The Gathering is NOT owned by me, it is a trademark of Wizards of the Coast LLC).
 The website: https://magic.wizards.com/en/articles/media/wallpapers
 
