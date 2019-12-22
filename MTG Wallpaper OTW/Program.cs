@@ -72,9 +72,12 @@ namespace MTG_Wallpaper_OTW
             
             TaskDefinition taskDefinition = TaskService.Instance.NewTask();
             taskDefinition.RegistrationInfo.Description = DESCRIPTION;
+
             // use daily in case of irregular wallpaper uploads
             taskDefinition.Triggers.Add(new DailyTrigger { DaysInterval = 1, StartBoundary = DateTime.Parse(hr + " " + meridiem.ToUpper()).AddMinutes(min) });
+            taskDefinition.Triggers.Add(new BootTrigger());
             taskDefinition.Settings.StartWhenAvailable = true;
+
             taskDefinition.Actions.Add(System.Reflection.Assembly.GetEntryAssembly().Location, null, null);
             TaskService.Instance.RootFolder.RegisterTaskDefinition(TASK_NAME, taskDefinition);
             TaskService.Instance.FindTask(TASK_NAME).Run();

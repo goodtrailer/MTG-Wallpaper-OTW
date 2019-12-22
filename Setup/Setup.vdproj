@@ -64,7 +64,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_4BB522B9BD0FB6B1CBA9F45A28D9F0B2"
+        "OwnerKey" = "8:_4FB5855219ED5207B91C0F4F425E41B4"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -76,7 +76,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_4FB5855219ED5207B91C0F4F425E41B4"
+        "OwnerKey" = "8:_4BB522B9BD0FB6B1CBA9F45A28D9F0B2"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -104,6 +104,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.6.1"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.6.1 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.6.1"
+                    }
+                }
             }
         }
         "Release"
@@ -252,11 +260,6 @@
             "AssemblyAsmDisplayName" = "8:Microsoft.Win32.TaskScheduler, Version=2.8.18.0, Culture=neutral, PublicKeyToken=c416bc1b32d97233, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_4BB522B9BD0FB6B1CBA9F45A28D9F0B2"
-                    {
-                    "Name" = "8:Microsoft.Win32.TaskScheduler.DLL"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:Microsoft.Win32.TaskScheduler.DLL"
             "TargetName" = "8:"
@@ -920,7 +923,7 @@
                             "ContextData" = "8:"
                             "Attributes" = "3:0"
                             "Setting" = "3:2"
-                            "Value" = "8:At what time should the program run? If the PC is off and misses the time, it'll run the program at the soonest opportunity.  If the input is invalid, the program will default to midnight."
+                            "Value" = "8:At what time should the program run? If the PC is off and misses the time, it'll run the program at the soonest opportunity.  Additionally, it will run at boot. If the input is invalid, the program will default to midnight."
                             "DefaultValue" = "8:#1215"
                             "UsePlugInResources" = "11:TRUE"
                             }
