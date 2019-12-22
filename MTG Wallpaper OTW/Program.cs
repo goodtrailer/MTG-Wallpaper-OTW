@@ -11,7 +11,8 @@ namespace MTG_Wallpaper_OTW
         [DllImport("user32.dll", CharSet = CharSet.Auto)]
         private static extern int SystemParametersInfo(int uAction, int uParam, string lpvParam, int fuWinIni);
 
-        const string IMAGE_SUFFIX = "_1920x1080_wallpaper.jpg";
+        const string TAG_TEXT = ">1920x1080</a>";
+        const string IMAGE_SUFFIX = ".jpg";
         const string IMAGE_PREFIX = "https://media.magic.wizards.com/images/wallpaper/";
         const string WALLPAPER_PAGE = "https://magic.wizards.com/en/articles/media/wallpapers";
         const string TASK_NAME = "MTG Wallpaper OTW";
@@ -42,6 +43,7 @@ namespace MTG_Wallpaper_OTW
         static void UpdateWallpaper()
         {
             string htmlSource;
+            int textIndex;
             int endIndex;
             int startIndex;
             string imageLink;
@@ -50,7 +52,8 @@ namespace MTG_Wallpaper_OTW
             using (WebClient client = new WebClient())
             {
                 htmlSource = client.DownloadString(WALLPAPER_PAGE);
-                endIndex = htmlSource.IndexOf(IMAGE_SUFFIX, System.StringComparison.CurrentCultureIgnoreCase) + IMAGE_SUFFIX.Length;
+                textIndex = htmlSource.IndexOf(TAG_TEXT, System.StringComparison.CurrentCultureIgnoreCase);
+                endIndex = htmlSource.LastIndexOf(IMAGE_SUFFIX, textIndex, System.StringComparison.CurrentCultureIgnoreCase) + IMAGE_SUFFIX.Length;
                 startIndex = htmlSource.LastIndexOf(IMAGE_PREFIX, endIndex, System.StringComparison.CurrentCultureIgnoreCase);
                 imageLink = htmlSource.Substring(startIndex, endIndex - startIndex);
                 client.DownloadFile(imageLink, imagePath);
