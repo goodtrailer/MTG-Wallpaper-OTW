@@ -3,7 +3,6 @@ using System.IO;
 using System.Runtime.InteropServices;
 using System;
 using Microsoft.Win32.TaskScheduler;
-using System.Diagnostics;
 
 namespace MTG_Wallpaper_OTW
 {
@@ -60,16 +59,7 @@ namespace MTG_Wallpaper_OTW
         }
 
         static void SetupTask(string hr = "12", int min = 0, string meridiem = "am")
-        {
-            EventLog eventLog1 = new EventLog();
-            if (!EventLog.SourceExists("MtgWotwSource"))
-            {
-                EventLog.CreateEventSource("MtgWotwSource", "MtgWotwLog");
-            }
-            eventLog1.Source = "MtgWotwSource";
-            eventLog1.Log = "MtgWotwLog";
-            eventLog1.WriteEntry(hr + ":" + min + " " + meridiem);
-            
+        {            
             TaskDefinition taskDefinition = TaskService.Instance.NewTask();
             taskDefinition.RegistrationInfo.Description = DESCRIPTION;
 
