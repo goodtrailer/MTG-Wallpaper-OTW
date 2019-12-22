@@ -64,7 +64,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_4FB5855219ED5207B91C0F4F425E41B4"
+        "OwnerKey" = "8:_4BB522B9BD0FB6B1CBA9F45A28D9F0B2"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -76,7 +76,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_4BB522B9BD0FB6B1CBA9F45A28D9F0B2"
+        "OwnerKey" = "8:_4FB5855219ED5207B91C0F4F425E41B4"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -260,6 +260,11 @@
             "AssemblyAsmDisplayName" = "8:Microsoft.Win32.TaskScheduler, Version=2.8.18.0, Culture=neutral, PublicKeyToken=c416bc1b32d97233, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
+                    "_4BB522B9BD0FB6B1CBA9F45A28D9F0B2"
+                    {
+                    "Name" = "8:Microsoft.Win32.TaskScheduler.DLL"
+                    "Attributes" = "3:512"
+                    }
                 }
             "SourcePath" = "8:Microsoft.Win32.TaskScheduler.DLL"
             "TargetName" = "8:"
@@ -418,7 +423,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:MTG Wallpaper OTW"
         "ProductCode" = "8:{18CCE60E-D53F-4F03-A774-4C318E91771A}"
-        "PackageCode" = "8:{8B5DF7E8-665A-454D-A877-A561E9037BBC}"
+        "PackageCode" = "8:{5EAC0AEA-388C-4D83-A6C7-4B50C791BA21}"
         "UpgradeCode" = "8:{645BDDE1-1788-484A-A002-BB32D34E884A}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
@@ -923,7 +928,7 @@
                             "ContextData" = "8:"
                             "Attributes" = "3:0"
                             "Setting" = "3:2"
-                            "Value" = "8:At what time should the program run? If the PC is off and misses the time, it'll run the program at the soonest opportunity.  Additionally, it will run at boot. If the input is invalid, the program will default to midnight."
+                            "Value" = "8:At what time should the program run? If the PC is off and misses the time, it'll run the program at the soonest opportunity.  Additionally, it will run at logon. If the input is invalid, the program will default to midnight."
                             "DefaultValue" = "8:#1215"
                             "UsePlugInResources" = "11:TRUE"
                             }
