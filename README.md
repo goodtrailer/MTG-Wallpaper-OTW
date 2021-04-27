@@ -3,7 +3,10 @@
 [![License](https://img.shields.io/github/license/goodtrailer/MTG-Wallpaper-OTW.svg?color=blue&style=flat-square)](https://github.com/goodtrailer/MTG-Wallpaper-OTW/blob/master/LICENSE)
 [![Downloads](https://img.shields.io/github/downloads/goodtrailer/MTG-Wallpaper-OTW/total.svg?color=orange&style=flat-square)](https://tooomm.github.io/github-release-stats/?username=goodtrailer&repository=MTG-Wallpaper-OTW)
 
-THIS PROGRAM IS WINDOWS ONLY! <br />
+<b>OBSOLETE: MTG Wallpaper OTW is obsolete. Check out the new, modular [goodtrailer/daily-desktop](https://github.com/goodtrailer/daily-desktop).</b>
+
+THIS PROGRAM IS WINDOWS ONLY!
+
 MTG Wallpaper OTW grabs new weekly Magic: The Gathering wallpaper from the official Magic: The Gathering website and sets it as your Windows desktop wallpaper.<br />
 <br/>
 The website: https://magic.wizards.com/en/articles/media/wallpapers
